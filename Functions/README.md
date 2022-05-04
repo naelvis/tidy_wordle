@@ -36,11 +36,9 @@ The script contains nine functions:
 * *best_words* sorts a given list of words to provide the next input. It does not return just a single word, but rather the whole sorted list, because the input dictionary seems to be substantially larger than the one Wordle uses. I never had to go further than the fifth element in the sorted list.
 
   For the sorting, the function looks into how often each letter is found in each of the positions, and ranks every word accordingly. The logic is best explained with an example: the word **dream** has a rank of 1801, which is computed as the sum of the ranks of each letter:
-  $$
-  \text{DREAM} = \text{D} + \text{R} + \text{E} + \text{A} + \text{M}\\
-  
-  1801 = 348 + 520 + 410 + 438 + 85
-  $$
+
+  ![Screenshot of an equation because we cannot have nice things](/Users/nelvis/Documents/R/tidy_wordle/Other/DREAM_rank.png)
+
   The letter **d** appears in first position 348 times in the whole dictionary, the letter **r** appears in second position 520 times, etc.
 
   There is actually one case when *best_words* returns a single word - this is when after the various filters only one word remains.
@@ -48,7 +46,3 @@ The script contains nine functions:
 So we start by using *best_words* on the whole dictionary - the suggested word is **sales** -, then pipe the various hints with *hint* to filter the dictionary to be sorted. See the README and the script in the main directory for an example.
 
 [^1]: This is coincidentally one of the few occasions when one would discard pizza in favor of salad.
-
-.
-
-. 
