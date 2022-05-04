@@ -8,6 +8,6 @@ The idea is to add the hints provided by Wordle step by step in a pipe:
 
 ![](https://raw.githubusercontent.com/naelvis/tidy_wordle/main/Other/pipe.png)
 
-Every call to *hint* filters the dictionary and pass it on to either the next *hint* call to filter it further or, finally, to *best_words* to provide a list of the most probable words satisfying the restrictions.
+Every call to *hint* filters the dictionary and passes it on to either the next *hint* call to filter it further or, finally, to *best_words* to provide a list of the most probable words satisfying the restrictions.
 
  For more details about the functions and the dictionary used please see the README in respectively the Functions and Dictionary repository.

@@ -8,7 +8,7 @@ The dictionary comes from the [SCOWL database](http://wordlist.aspell.net). If y
 
 The "60" version seems more than sufficient for the program - some of the words are already not in the wordle list. See the README in the .zip file for details on the different versions of the dictionary.
 
-The actual reason for this README is that I obtained this error message when I first tried to run the script above:
+The actual reason for this README is that I obtained this error message when I first tried to run the script above and wanted to share how to solve it:
 
 ```bash
 /usr/bin/perl^M: bad interpreter: No such file or directory
