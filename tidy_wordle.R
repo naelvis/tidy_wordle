@@ -20,14 +20,14 @@ words_sep <- words_five %>%
            sep = c(1, 2, 3, 4, 5))
 
 # Source wordle functions
-source("./wordle_functions.R")
+source("./Functions/wordle_functions.R")
 
 # Trial run
 
 # Round 1
 
 best_words() %>% 
-  head(5)
+  head(25)
 
 # Round 2
 
@@ -55,3 +55,4 @@ hint(word = "sales",
        color_string = "gvvyy") %>%
   best_words %>% 
   head(5)
+ 
