@@ -35,7 +35,7 @@ The script contains nine functions:
 
 * *best_words* sorts a given list of words to provide the next input. It does not return just a single word, but rather the whole sorted list, because the input dictionary seems to be substantially larger than the one Wordle uses. I never had to go further than the fifth element in the sorted list.
 
-  For the sorting, the function looks into how often each letter is found in each of the positions, and ranks every word accordingly. The logic is best explained with an example: the word **dream** has a rank of 1801, which is computed as the sum of the ranks of each letter:
+  For the sorting, the function looks into how often each letter is found in each of the positions, and ranks every word accordingly. The logic is best explained with an example. The word **dream** has a rank of 1801, which is computed as the sum of each letter's rank:
 
   ![Screenshot of an equation because we cannot have nice things](https://raw.githubusercontent.com/naelvis/tidy_wordle/main/Other/DREAM_rank.png)
 

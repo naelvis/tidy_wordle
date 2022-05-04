@@ -1,7 +1,8 @@
 # Functions
 
-# Filter words based on color and position of a letter
+# Filter words based on color and position of a letter #########
 
+# Green letter
 green_letter <- function(data, position, letter) {
   
   filter(data,
@@ -10,6 +11,7 @@ green_letter <- function(data, position, letter) {
   
 }
 
+# Gray letter
 gray_letter <- function(data, position, letter,
                         green_positions,
                         yellow_positions) {
@@ -26,6 +28,7 @@ gray_letter <- function(data, position, letter,
   
 }
 
+# Yellow letter
 yellow_letter <- function(data, position, letter) {
   
   filter(data,
@@ -48,7 +51,7 @@ hint_letter <- function(data, color, position, letter,
   
 }
 
-# Checks the number of allowed letters in a word
+# Check the number of allowed letters in a word ##############
 
 count_letter <- function(data, word, color_string) {
   
@@ -85,7 +88,7 @@ count_letter <- function(data, word, color_string) {
   }
 }
 
-# Helper functions to determine green and yellow positions in a word
+# Helper functions to determine green and yellow positions in a word #####
 
 determine_green <- function(colors) {
   
@@ -143,7 +146,7 @@ determine_yellow <- function(letters, colors) {
   
 }
 
-# Filter words based on a hint (a word and the colours returned)
+# Filter words based on a hint (a word and the colours returned) ########
 
 hint <- function(data = words_sep,
                  word,
@@ -181,7 +184,7 @@ hint <- function(data = words_sep,
   
 }
 
-# Given a list of words sort them from most to least common
+# Given a list of words sort them from most to least common #########
 
 best_words <- function(selected_words = words_sep, n = 5) {
   

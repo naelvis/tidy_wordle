@@ -26,15 +26,13 @@ source("./Functions/wordle_functions.R")
 
 # Round 1
 
-best_words() %>% 
-  head(25)
+best_words()
 
 # Round 2
 
 hint(word = "sales",
      color_string = "gyggg") %>% 
-  best_words %>% 
-  head(5)
+  best_words
 
 # Round 3
 
@@ -42,8 +40,7 @@ hint(word = "sales",
      color_string = "gyggg") %>% 
   hint(word = "drama",
        color_string = "gvvgg") %>% 
-  best_words %>% 
-  head(5)
+  best_words
 
 # Round 4
 
@@ -53,6 +50,4 @@ hint(word = "sales",
        color_string = "gvvgg") %>% 
   hint(word = "brant",
        color_string = "gvvyy") %>%
-  best_words %>% 
-  head(5)
- 
+  best_words
