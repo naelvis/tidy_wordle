@@ -37,7 +37,7 @@ The script contains nine functions:
 
   For the sorting, the function looks into how often each letter is found in each of the positions, and ranks every word accordingly. The logic is best explained with an example: the word **dream** has a rank of 1801, which is computed as the sum of the ranks of each letter:
 
-  ![Screenshot of an equation because we cannot have nice things](/Users/nelvis/Documents/R/tidy_wordle/Other/DREAM_rank.png)
+  ![Screenshot of an equation because we cannot have nice things](https://raw.githubusercontent.com/naelvis/tidy_wordle/main/Other/DREAM_rank.png)
 
   The letter **d** appears in first position 348 times in the whole dictionary, the letter **r** appears in second position 520 times, etc.
 
