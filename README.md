@@ -6,7 +6,7 @@ The script in page loads the dictionary I used, performs some minimal preprocess
 
 The idea is to add the hints provided by Wordle step by step in a pipe:
 
-![](/Users/nelvis/Documents/R/tidy_wordle/Other/pipe.png)
+![](https://raw.githubusercontent.com/naelvis/tidy_wordle/main/Other/pipe.png)
 
 Every call to *hint* filters the dictionary and pass it on to either the next *hint* call to filter it further or, finally, to *best_words* to provide a list of the most probable words satisfying the restrictions.
 

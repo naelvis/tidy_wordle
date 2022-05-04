@@ -27,7 +27,7 @@ The script contains nine functions:
 
   So for the following hint
 
-  ![](/Users/nelvis/Documents/R/tidy_wordle/Other/DREAM.png)
+  ![](https://raw.githubusercontent.com/naelvis/tidy_wordle/main/Other/DREAM.png)
 
   We would input "gvgyg".
 
